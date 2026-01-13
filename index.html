@@ -3,147 +3,250 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcosVita AC | Compromiso Social Responsable</title>
-
+    <title>Reporte de Análisis y Solicitud de Información - EcosVita</title>
     <style>
+        /* --- Estilos Generales --- */
         body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
             margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background: #f4f8f5;
-            color: #2c3e2f;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
         }
 
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 40px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            border-top: 5px solid #2c6e49; /* Color verde de la naturaleza */
+        }
+
+        /* --- Encabezado y Logo --- */
         header {
-            background: linear-gradient(135deg, #1e5631, #4caf50);
-            color: white;
-            padding: 30px 20px;
             text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e0e0e0;
         }
 
-        header img {
-            max-width: 160px;
+        .logo {
+            max-width: 180px;
             margin-bottom: 15px;
         }
 
-        header h1 {
-            margin: 10px 0 5px;
-            font-size: 28px;
+        h1 {
+            color: #1a5276; /* Azul profesional */
+            font-size: 24px;
+            font-weight: 600;
+            margin: 10px 0;
         }
 
-        header p {
-            margin: 0;
-            font-size: 16px;
-            opacity: 0.9;
-        }
-
-        main {
-            max-width: 900px;
-            margin: auto;
-            padding: 30px 20px;
-            background: white;
-        }
-
-        section {
-            margin-bottom: 30px;
-        }
-
-        h2 {
-            color: #1e5631;
-            border-left: 5px solid #4caf50;
-            padding-left: 10px;
-        }
-
-        .datos {
-            line-height: 1.8;
-        }
-
-        .firma {
-            margin-top: 40px;
-            border-top: 1px solid #ccc;
-            padding-top: 20px;
-        }
-
-        .whatsapp {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 12px 20px;
-            background: #25d366;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-        }
-
-        footer {
-            background: #1e5631;
-            color: white;
-            text-align: center;
-            padding: 15px;
+        .metadata {
             font-size: 14px;
+            color: #555;
+        }
+
+        .metadata strong {
+            color: #333;
+        }
+
+        /* --- Contenido Principal --- */
+        h2 {
+            color: #2c6e49;
+            font-size: 20px;
+            border-bottom: 2px solid #d5e8d4;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+
+        h3 {
+            color: #34495e;
+            font-size: 18px;
+            margin-top: 25px;
+        }
+
+        p, li {
+            font-size: 16px;
+            text-align: justify;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="%232c6e49" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>') no-repeat left center;
+            padding-left: 30px;
+            margin-bottom: 10px;
+        }
+
+        .legal-reference {
+            background-color: #eef7f2;
+            border-left: 4px solid #2c6e49;
+            padding: 15px 20px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+
+        .legal-reference strong {
+            color: #1a5276;
+        }
+
+        /* --- Sección de Solicitud y Conclusión --- */
+        .request-list {
+            background-color: #fdfefe;
+            border: 1px solid #d6eaf8;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .request-list ol {
+            padding-left: 20px;
+        }
+
+        .request-list ol li {
+            margin-bottom: 12px;
+        }
+
+        /* --- Pie de Página --- */
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            text-align: center;
+            font-size: 14px;
+            color: #777;
+        }
+
+        .signature {
+            margin-top: 20px;
+        }
+
+        .signature p {
+            text-align: center;
+            margin: 5px 0;
+            font-size: 16px;
+        }
+
+        .signature strong {
+            font-size: 18px;
+            display: block;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
 
-<header>
-    <img src="logo-ecosvita.png" alt="EcosVita AC">
-    <h1>EcosVita A.C.</h1>
-    <p>Compromiso social, ambiental y comunitario con responsabilidad</p>
-</header>
+    <div class="container">
+        <header>
+            <img src="https://z-cdn-media.chatglm.cn/files/7b569d68-0113-4095-be74-bde5d00690b5.png?auth_key=1868266439-6a8710a16244423d8069672335ca29bd-0-6af4ad2a80abb7ae66ba299694823603" alt="Logotipo de EcosVita" class="logo">
+            <h1>REPORTE DE ANÁLISIS Y SOLICITUD DE INFORMACIÓN COMPLEMENTARIA</h1>
+            <div class="metadata">
+                <p><strong>ASUNTO:</strong> Análisis del formato "AFILIACIÓN A PROGRAMA CON SUBSIDIO EN APOYO ALIMENTICIO" y solicitud de verificación institucional.</p>
+                <p><strong>DE:</strong> Ing. Antonio Camarillo, Representante de la Asociación Civil en formación EcosVita.</p>
+                <p><strong>FECHA:</strong> <span id="current-date"></span></p>
+            </div>
+        </header>
 
-<main>
+        <main>
+            <section>
+                <p>Estimados(as) <strong>[Nombre del grupo o persona]</strong>,</p>
+                <p>Recibo un cordial saludo. Me dirijo a ustedes en mi calidad de Representante de la Asociación Civil <strong>EcosVita</strong>, en relación con el formato de afiliación titulado <strong>"FORMATO ACTUALIZADO DE AFILIACIÓN A PROGRAMA CON SUBSIDIO EN APOYO ALIMENTICIO"</strong>, el cual nos han compartido para la posible afiliación de las personas que forman parte de nuestra comunidad.</p>
+                <p>Como Asociación Civil con un firme compromiso social y en proceso de formalización ante las autoridades mexicanas, nuestra prioridad es actuar con absoluta transparencia, legalidad y responsabilidad. El bienestar y la protección de los datos personales de nuestros afiliados es nuestra máxima preocupación.</p>
+                <p>En este sentido, hemos realizado un análisis preliminar del documento proporcionado y, debido a la naturaleza sensible de la información que se solicita, es nuestra obligación solicitar información adicional que nos permita verificar la legitimidad y procedencia oficial del programa. A continuación, presentamos los fundamentos de nuestra solicitud.</p>
+            </section>
 
-    <section>
-        <h2>Presentación Institucional</h2>
-        <p>
-            <strong>EcosVita A.C.</strong> es una Asociación Civil comprometida con el bienestar social,
-            el desarrollo comunitario y la actuación responsable, ética y transparente en todas
-            sus gestiones y vinculaciones.
-        </p>
-        <p>
-            Nuestra labor se rige bajo principios de legalidad, protección de datos personales,
-            y respeto absoluto a la dignidad de las personas.
-        </p>
-    </section>
+            <section>
+                <h2>1. Análisis del Formato y Ausencia de Referencias Oficiales</h2>
+                <p>El formato en cuestión solicita datos personales altamente sensibles, <strong>incluyendo, entre otros:</strong></p>
+                <ul>
+                    <li>Nombre completo, CURP, domicilio y teléfono.</li>
+                    <li>Información detallada sobre ingresos, gastos y composición familiar.</li>
+                    <li>Fotografías personales y del domicilio.</li>
+                </ul>
+                <p>A pesar de la sensibilidad de los datos, el documento <strong>carece de elementos fundamentales que permitan su validación</strong>, tales como:</p>
+                <ul>
+                    <li>Logotipo, sello o nombre de alguna dependencia de gobierno federal, estatal o municipal.</li>
+                    <li>Número de registro, folio o clave del programa oficial.</li>
+                    <li>Datos de contacto (teléfono, correo electrónico, dirección física) de la institución responsable.</li>
+                    <li>Una referencia directa a la norma o acuerdo que crea dicho programa.</li>
+                </ul>
+                <p>Una búsqueda exhaustiva en los portales oficiales del Gobierno de la República, incluyendo la Secretaría de Bienestar (bienestar.gob.mx) y las secretarías estatales, <strong>no arrojó ningún resultado que vincule este formato con un programa de subsidio alimentario existente y oficialmente publicado</strong>.</p>
+            </section>
 
-    <section>
-        <h2>Postura Institucional</h2>
-        <p>
-            EcosVita A.C. únicamente participa en iniciativas, programas y proyectos que cuenten
-            con sustento legal, claridad institucional y plena verificabilidad, con el objetivo
-            de proteger a sus afiliados y evitar cualquier posible fraude, simulación o uso indebido
-            de información personal.
-        </p>
-    </section>
+            <section>
+                <h2>2. Fundamento Legal y Responsabilidad de EcosVita</h2>
+                <p>Nuestra cautela está respaldada por el marco legal vigente en México, que nos obliga a garantizar la protección de los datos de nuestros afiliados y a actuar con diligencia.</p>
+                
+                <div class="legal-reference">
+                    <h3>Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP)</h3>
+                    <ul>
+                        <li><strong>Artículo 6:</strong> Establece el "Principio de Licitud", que indica que el tratamiento de datos personales solo es lícito cuando se cuenta con el consentimiento del titular y para fines legítimos. Recabar datos para un programa no verificado podría violar este principio.</li>
+                        <li><strong>Artículo 8:</strong> Señala el deber de informar al titular de los datos el propósito del tratamiento y quién será el responsable. Sin conocer la institución detrás del formato, es imposible cumplir con esta obligación.</li>
+                        <li><strong>Artículo 22:</strong> Establece que el responsable del tratamiento de datos deberá adoptar las medidas necesarias para garantizar la seguridad de los datos. Entregar información a una entidad no verificada nos expondría a una grave responsabilidad legal.</li>
+                    </ul>
+                </div>
 
-    <section>
-        <h2>Datos de Contacto</h2>
-        <div class="datos">
-            <strong>Representante:</strong> Ing. Camarillo<br>
-            <strong>WhatsApp:</strong> 221 557 9926<br>
-            <strong>Domicilio:</strong><br>
-            Calle Santa María 31, Fraccionamiento Santa María 2<br>
-            Cuautlancingo, Puebla<br>
-            C.P. 72700
-        </div>
+                <div class="legal-reference">
+                    <h3>Código Penal Federal</h3>
+                    <ul>
+                        <li><strong>Artículo 211 Bis:</strong> Sanciona a quien "aproveche indebidamente" imágenes, voz o datos de una persona. Esto nos obliga a ser extremadamente cuidadosos con los documentos y fotografías que manejamos.</li>
+                    </ul>
+                </div>
+                
+                <div class="legal-reference">
+                    <h3>Ley Federal Antilavado de Dinero</h3>
+                    <ul>
+                        <li>Debemos ser conscientes de que los programas sociales pueden ser utilizados como fachada para operaciones ilícitas. Nuestra diligencia nos protege a nosotros y a nuestra comunidad.</li>
+                    </ul>
+                </div>
+            </section>
 
-        <a class="whatsapp" href="https://wa.me/522215579926" target="_blank">
-            Contactar vía WhatsApp
-        </a>
-    </section>
+            <section>
+                <h2>3. Solicitud Formal de Información Verificable</h2>
+                <p>Con base en lo anterior, y para poder proceder con la debida confianza y seguridad jurídica, solicitamos amablemente nos proporcionen la siguiente <strong>información indispensable</strong>:</p>
+                <div class="request-list">
+                    <ol>
+                        <li><strong>Nombre oficial y completo del programa</strong> de subsidio alimentario.</li>
+                        <li><strong>Nombre de la dependencia o entidad gubernamental</strong> (federal, estatal o municipal) que opera y financia dicho programa.</li>
+                        <li><strong>Un enlace (URL) directo al portal oficial</strong> del programa donde se publique la convocatoria y el formato oficial.</li>
+                        <li><strong>Datos de contacto verificados</strong> de un funcionario o área responsable dentro de la institución operadora.</li>
+                        <li><strong>Copia del acuerdo, decreto o norma oficial</strong> que da origen al programa.</li>
+                    </ol>
+                </div>
+            </section>
 
-    <section class="firma">
-        <p>
-            <strong>EcosVita A.C.</strong><br>
-            “La responsabilidad social comienza con la verdad.”
-        </p>
-    </section>
+            <section>
+                <h2>Conclusión y Próximos Pasos</h2>
+                <p>En EcosVita valoramos enormemente la colaboración con actores que busquen el bienestar de nuestra comunidad. Sin embargo, nuestra misión nos exige la más alta integridad y un escrupuloso cumplimiento de la ley.</p>
+                <p><strong>No podremos recomendar ni gestionar la afiliación de nuestras personas a este programa hasta haber recibido y verificado la información solicitada.</strong> Una vez que nos proporcionen estos elementos, nos comprometemos a realizar una evaluación final y a darles una respuesta pronta.</p>
+                <p>Agradecemos de antemano su comprensión y colaboración en este asunto de suma importancia. Quedamos a su entera disposición para cualquier duda o aclaración.</p>
+            </section>
+        </main>
 
-</main>
+        <footer>
+            <div class="signature">
+                <p>Atentamente,</p>
+                <br>
+                <strong>Ing. Antonio Camarillo</strong>
+                <p>Representante</p>
+                <p>Asociación Civil EcosVita (en trámite)</p>
+                <p><strong>Teléfono/WhatsApp:</strong> 221 557 9926</p>
+                <p><strong>Correo electrónico:</strong> camarillo.arodolfo@gmail.com</p>
+            </div>
+        </footer>
+    </div>
 
-<footer>
-    © 2026 EcosVita A.C. | Documento institucional informativo
-</footer>
+    <script>
+        // Script para poner la fecha actual automáticamente
+        document.getElementById('current-date').textContent = new Date().toLocaleDateString('es-MX', { year: 'numeric', month: 'long', day: 'numeric' });
+    </script>
 
 </body>
 </html>
